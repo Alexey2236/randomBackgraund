@@ -26,23 +26,38 @@ a {
 .header {
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
+    display: block;
     animation: opacit 1.5s infinite alternate;
     font-size: 2rem;
     text-transform: uppercase;
 }
 
 .b {
-    position: relative;
-    margin-top: 25%;
+    margin-top: 55px;
     text-transform: lowercase;
     border: solid 2px gray;
     border-radius: 5px;
     padding: 11px 35px 11px 35px;
     opacity: 0.8;
     font-size: 2rem;
+    width: 150px;
+}
+
+.scrin {
+    margin-top: 55px;
+    text-transform: lowercase;
+    border: solid 2px gray;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+    opacity: 0.8;
+    font-size: 15px;
+    width: 150px;
 }
 
 @keyframes opacit {
