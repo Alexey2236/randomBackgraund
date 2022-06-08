@@ -1,4 +1,5 @@
-document.querySelector('.b').addEventListener("click", () => {
+document.querySelector('.b').addEventListener("click", (e) => {
+    e.preventDefault();
 
     let arrColor = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
 
@@ -16,4 +17,12 @@ document.querySelector('.b').addEventListener("click", () => {
 
     document.body.style.background =
         `linear-gradient(to bottom right, #${grad1}, #${grad2})`;
+});
+
+document.querySelector('.scrin').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('.b').style.display = 'none';
+    document.querySelector('.scrin').style.display = 'none';
+    document.querySelector('.title').style.display = 'none';
+
 });
