@@ -14,15 +14,20 @@ document.querySelector('.b').addEventListener("click", (e) => {
         randomIndex = Math.floor(Math.random() * arrColor.length);
         grad2 += arrColor[randomIndex];
     }
+    
+      document.body.style.background = `linear-gradient(to bottom right, #${grad1}, #${grad2})`;
 
-    document.body.style.background =
-        `linear-gradient(to bottom right, #${grad1}, #${grad2})`;
+
+    const statusTitle = document.querySelector('.status');
+    statusTitle.textContent = `${grad1} - ${grad2}`;
+    statusTitle.style.opacity = 1;
+    
 });
 
-document.querySelector('.scrin').addEventListener('click', (e) => {
-    e.preventDefault();
-    document.querySelector('.b').style.display = 'none';
-    document.querySelector('.scrin').style.display = 'none';
-    document.querySelector('.title').style.display = 'none';
-
+document.querySelector(".scrin").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".b").style.display = "none";
+  document.querySelector(".scrin").style.display = "none";
+  document.querySelector(".title").style.display = "none";
+  document.querySelector('.status').style.display = "none";
 });
