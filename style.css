@@ -59,6 +59,9 @@ a {
     font-size: 15px;
     width: 150px;
 }
+.status{
+    opacity: 0;
+}
 
 @keyframes opacit {
     0% {
